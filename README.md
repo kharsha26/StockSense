@@ -235,13 +235,8 @@ StockSense is for **educational and informational purposes only**. It is not fin
 
 ---
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
 
 ## 👨‍💻 Author
 
-**D. Aditya**  
-GitHub: [@adityaa-08](https://github.com/adityaa-08)
+**K.Sree Harsha**  
+GitHub: [@kharsha26](https://github.com/kharsha26)
