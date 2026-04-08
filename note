@@ -1,0 +1,39 @@
+http://localhost:8000/docs to run on web
+
+docker-compose down -v
+docker-compose up --build    to execute
+
+
+backend activate: python -m uvicorn app.main:app --reload --port 8000
+                    
+frontend activate:  npm start      
+
+
+
+
+
+
+python -m uvicorn app.main:app --reload
+
+for signin and signup:
+pip install python-jose[cryptography]
+pip install python-jose[cryptography] passlib[bcrypt] python-multipart bcrypt apscheduler
+
+pip install bcrypt==4.0.1
+pip install sqlite-utils
+
+
+DATABASE USING SQLITE
+
+to check the saved data or credentials:
+sqlite-utils query stock.db "SELECT * FROM users"
+
+to check the database of portfolio
+sqlite-utils query stock.db "SELECT * FROM portfolio"
+
+
+
+cd D:\Stock_sense-main\backend
+.\.venv\Scripts\activate
+sqlite-utils query stock.db "SELECT * FROM users"
+sqlite-utils query stock.db "SELECT * FROM portfolio"

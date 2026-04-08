@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+numpy==1.26.4
+pandas
+torch==2.2.2
+yfinance
+requests
+textblob
+vaderSentiment
+pytrends
+python-dotenv

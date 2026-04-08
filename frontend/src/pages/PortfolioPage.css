@@ -1,0 +1,555 @@
+/* PortfolioPage.css
+.portfolio-page {
+  padding: 6rem 4rem 4rem;
+  min-height: 100vh;
+}
+
+.portfolio-header { margin-bottom: 2.5rem; }
+.portfolio-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700; margin-bottom: 0.5rem;
+}
+.portfolio-header p { color: var(--muted); font-size: 0.95rem; } */
+
+/* Summary cards */
+/* .port-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.port-stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+}
+.psc-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+.psc-val {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.psc-val.up { color: var(--up); }
+.psc-val.dn { color: var(--down); }
+.psc-pct {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.78rem;
+} */
+
+/* Actions */
+/* .port-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.btn-add-stock {
+  background: var(--accent);
+  color: var(--bg);
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-add-stock:hover { background: #00e8bb; }
+
+.btn-refresh {
+  background: var(--surface);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-refresh:hover { border-color: var(--accent); color: var(--accent); } */
+
+/* Add form */
+/* .add-stock-form {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  animation: fadeUp 0.2s ease;
+}
+.form-title {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+.add-form-row {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.add-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1;
+  min-width: 120px;
+}
+.add-field label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.add-field input {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  color: var(--text);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.88rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.add-field input:focus { border-color: var(--accent); }
+.add-field input::placeholder { color: var(--muted); }
+
+.btn-add-submit {
+  background: var(--accent);
+  color: var(--bg);
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.btn-add-submit:hover:not(:disabled) { background: #00e8bb; }
+.btn-add-submit:disabled { opacity: 0.6; cursor: not-allowed; } */
+
+/* Loading */
+/* .port-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+}
+
+/* Empty */
+.port-empty {
+  text-align: center;
+  padding: 5rem;
+  color: var(--muted);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.85rem;
+}
+.port-empty-icon { font-size: 3rem; margin-bottom: 1rem; }
+.port-empty-sub  { font-size: 0.75rem; margin-top: 0.5rem; } */
+
+/* Table */
+/* .port-table-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  overflow-x: auto;
+}
+.port-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+.port-table th {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 1rem 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  white-space: nowrap;
+}
+.port-table td {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.port-table tr:last-child td { border-bottom: none; }
+.port-table tr:hover td { background: rgba(0,212,170,0.03); }
+
+.port-sym {
+  font-family: 'DM Mono', monospace;
+  font-weight: 500;
+  color: var(--accent);
+}
+.up { color: var(--up); }
+.dn { color: var(--down); }
+.pnl-pct {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+.btn-analyse-sym {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  border-radius: 4px;
+  padding: 0.3rem 0.7rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.btn-analyse-sym:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+} */
+
+/* Reuse from AnalysisPage */
+/* .auth-error {
+  background: rgba(255,71,87,0.1);
+  border: 1px solid rgba(255,71,87,0.3);
+  color: #ff4757;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.82rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+  .portfolio-page  { padding: 6rem 1.5rem 3rem; }
+  .port-summary    { grid-template-columns: 1fr 1fr; }
+  .add-form-row    { flex-direction: column; }
+}
+
+.btn-delete-sym {
+  background: none;
+  border: 1px solid rgba(255,71,87,0.3);
+  color: #ff4757;
+  border-radius: 4px;
+  padding: 0.3rem 0.7rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.btn-delete-sym:hover {
+  background: rgba(255,71,87,0.1);
+  border-color: #ff4757;
+}
+
+ */
+
+
+
+
+ /* PortfolioPage.css */
+.portfolio-page {
+  padding: 6rem 4rem 4rem;
+  min-height: 100vh;
+}
+
+.portfolio-header { margin-bottom: 2.5rem; }
+.portfolio-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700; margin-bottom: 0.5rem;
+}
+.portfolio-header p { color: var(--muted); font-size: 0.95rem; }
+
+/* Summary cards */
+.port-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.port-stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+}
+.psc-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+.psc-val {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.psc-val.up { color: var(--up); }
+.psc-val.dn { color: var(--down); }
+.psc-pct {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.78rem;
+}
+
+/* Actions */
+.port-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.btn-add-stock {
+  background: var(--accent);
+  color: var(--bg);
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-add-stock:hover { background: #00e8bb; }
+
+.btn-refresh {
+  background: var(--surface);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-refresh:hover { border-color: var(--accent); color: var(--accent); }
+
+/* Add form */
+.add-stock-form {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  animation: fadeUp 0.2s ease;
+}
+.form-title {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+.add-form-row {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.add-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1;
+  min-width: 120px;
+}
+.add-field label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.add-field input {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  color: var(--text);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.88rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.add-field input:focus { border-color: var(--accent); }
+.add-field input::placeholder { color: var(--muted); }
+
+.btn-add-submit {
+  background: var(--accent);
+  color: var(--bg);
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.btn-add-submit:hover:not(:disabled) { background: #00e8bb; }
+.btn-add-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+
+/* Loading */
+.port-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+}
+
+/* Empty */
+.port-empty {
+  text-align: center;
+  padding: 5rem;
+  color: var(--muted);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.85rem;
+}
+.port-empty-icon { font-size: 3rem; margin-bottom: 1rem; }
+.port-empty-sub  { font-size: 0.75rem; margin-top: 0.5rem; }
+
+/* Table */
+.port-table-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  overflow-x: auto;
+}
+.port-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+.port-table th {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 1rem 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  white-space: nowrap;
+}
+.port-table td {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.port-table tr:last-child td { border-bottom: none; }
+.port-table tr:hover td { background: rgba(0,212,170,0.03); }
+
+.port-sym {
+  font-family: 'DM Mono', monospace;
+  font-weight: 500;
+  color: var(--accent);
+}
+.up { color: var(--up); }
+.dn { color: var(--down); }
+.pnl-pct {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+.btn-analyse-sym {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  border-radius: 4px;
+  padding: 0.3rem 0.7rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.btn-analyse-sym:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Reuse from AnalysisPage */
+.auth-error {
+  background: rgba(255,71,87,0.1);
+  border: 1px solid rgba(255,71,87,0.3);
+  color: #ff4757;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.82rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+  .portfolio-page  { padding: 6rem 1.5rem 3rem; }
+  .port-summary    { grid-template-columns: 1fr 1fr; }
+  .add-form-row    { flex-direction: column; }
+}
+
+/* Not logged in warning */
+.port-not-logged-in {
+  background: rgba(255,165,0,0.08);
+  border: 1px solid rgba(255,165,0,0.25);
+  color: #ffa502;
+  border-radius: 8px;
+  padding: 0.9rem 1.2rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.82rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.port-not-logged-in button {
+  background: rgba(255,165,0,0.15);
+  border: 1px solid rgba(255,165,0,0.3);
+  color: #ffa502;
+  border-radius: 4px;
+  padding: 0.3rem 0.8rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.port-not-logged-in button:hover {
+  background: rgba(255,165,0,0.25);
+}
+
+/* Auth logged in info */
+.auth-logged-in {
+  text-align: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+.auth-logged-in strong {
+  color: var(--accent);
+}
