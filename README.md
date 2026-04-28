@@ -1,4 +1,4 @@
-# 📈 StockSense — AI-Powered Stock Market Prediction & Portfolio Analytics
+#  StockSense — AI-Powered Stock Market Prediction & Portfolio Analytics
 
 StockSense is an **AI-driven full-stack stock intelligence platform** that combines **technical indicators, news sentiment analysis, machine learning classification, backtesting, and portfolio tracking** into a single modern dashboard.
 
@@ -6,9 +6,9 @@ It helps users analyze stocks like **AAPL, MSFT, AMZN, TSLA, NVDA**, predict **B
 
 ---
 
-# 🚀 Features
+#  Features
 
-## 🧠 AI Prediction Engine
+##  AI Prediction Engine
 
 * Next-day **direction classification (UP / DOWN)**
 * **BUY / HOLD / SELL** recommendation engine
@@ -16,7 +16,7 @@ It helps users analyze stocks like **AAPL, MSFT, AMZN, TSLA, NVDA**, predict **B
 * Technical + sentiment hybrid modeling
 * Multi-stock extensibility
 
-## 📰 News Sentiment Intelligence
+##  News Sentiment Intelligence
 
 * Real-time stock news fetching
 * NLP-based sentiment scoring
@@ -24,7 +24,7 @@ It helps users analyze stocks like **AAPL, MSFT, AMZN, TSLA, NVDA**, predict **B
 * Sentiment volatility tracking
 * Bullish / Bearish gauge
 
-## 📊 Quant Analytics Dashboard
+##  Quant Analytics Dashboard
 
 * Candlestick & trend visualization
 * Predicted % price movement
@@ -33,7 +33,7 @@ It helps users analyze stocks like **AAPL, MSFT, AMZN, TSLA, NVDA**, predict **B
 * AI analysis metrics cards
 * Portfolio weight insights
 
-## 📈 Model Evaluation & Backtesting
+##  Model Evaluation & Backtesting
 
 * Classification Accuracy
 * Precision / Recall / F1
@@ -42,7 +42,7 @@ It helps users analyze stocks like **AAPL, MSFT, AMZN, TSLA, NVDA**, predict **B
 * Sharpe Ratio
 * Historical strategy validation
 
-## 💼 Portfolio Management
+##  Portfolio Management
 
 * Add / remove stocks
 * Track holdings
@@ -50,7 +50,7 @@ It helps users analyze stocks like **AAPL, MSFT, AMZN, TSLA, NVDA**, predict **B
 * User-wise portfolio storage
 * SQLite persistence
 
-## 🔐 Authentication System
+##  Authentication System
 
 * User registration
 * Login session support
@@ -59,7 +59,7 @@ It helps users analyze stocks like **AAPL, MSFT, AMZN, TSLA, NVDA**, predict **B
 
 ---
 
-# 🏗️ Tech Stack
+#  Tech Stack
 
 ## Frontend
 
@@ -99,7 +99,7 @@ It helps users analyze stocks like **AAPL, MSFT, AMZN, TSLA, NVDA**, predict **B
 
 ---
 
-# 🧠 ML Features Used
+#  ML Features Used
 
 The model uses engineered hybrid features:
 
@@ -122,7 +122,7 @@ BUY / HOLD / SELL
 
 ---
 
-# 📂 Project Structure
+#  Project Structure
 
 ```bash
 StockSense/
@@ -148,7 +148,7 @@ StockSense/
 
 ---
 
-# ⚙️ Installation
+#  Installation
 
 ## 1) Clone Repository
 
@@ -176,7 +176,7 @@ npm run dev
 
 ---
 
-# ▶️ Run the Project
+#  Run the Project
 
 ## Start Backend
 
@@ -194,7 +194,7 @@ npm run dev
 
 ---
 
-# 📊 Model Performance
+#  Model Performance
 
 Typical realistic performance on unseen financial data:
 
@@ -211,7 +211,7 @@ Typical realistic performance on unseen financial data:
 
 ---
 
-# 🗃️ Database Tables
+#  Database Tables
 
 ## Users
 
@@ -241,7 +241,7 @@ Stores:
 
 ---
 
-# 🔍 Example API Endpoints
+#  Example API Endpoints
 
 ```bash
 GET /api/stock-news/AAPL
@@ -253,7 +253,7 @@ GET /api/backtest/AAPL
 
 ---
 
-# 🎯 Use Cases
+#  Use Cases
 
 * AI stock direction prediction
 * sentiment-aware trading assistant
@@ -264,7 +264,7 @@ GET /api/backtest/AAPL
 
 ---
 
-# 🔮 Future Enhancements
+#  Future Enhancements
 
 * XGBoost ensemble pipeline
 * LSTM + attention forecasting
@@ -277,23 +277,19 @@ GET /api/backtest/AAPL
 
 ---
 
-# 👨‍💻 Author
+#  Author
 
 **Sree Harsha**
 
-AI/ML • Quant Analytics • Full Stack Development • Generative AI
+AI/ML • Full Stack Development 
 
 ---
 
-# 📜 License
+#  License
 
 This project is developed for **academic, portfolio, and research demonstration purposes**.
 
 ---
-
-# ⭐ Support
-
-If you found this useful:
 
 * ⭐ Star the repository
 * 🍴 Fork it
